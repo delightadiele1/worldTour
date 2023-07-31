@@ -1,0 +1,174 @@
+body {
+  padding: 50px 0;
+  margin: 0;
+  background-color: rgb(110, 187, 110);
+}
+
+.top__header {
+  padding: 20px;
+}
+.top__header h1 {
+  font-family: "Pacifico", cursive;
+}
+
+.wrapper {
+  background-color: gainsboro;
+  height: 100%;
+  border-radius: 5px;
+  /* padding: 10px; */
+}
+
+.search__btn {
+  background-color: rgb(42, 185, 42);
+  font-size: 18px !important;
+  border: none;
+}
+.search__input {
+  font-size: 18px !important;
+}
+
+.result__sheet,
+.pagination {
+  width: 100% !important;
+}
+
+.result__item {
+  width: 33% !important;
+}
+
+.result-item-container:hover {
+  background-color: gainsboro;
+  transform: translateY(-4%);
+  transition: all 0.1s linear;
+}
+
+.page-btn {
+  border-radius: 20px;
+  font-size: small;
+  background-color: rgb(230, 219, 219);
+  color: rgb(42, 185, 42);
+}
+
+.continent__list {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.continent {
+  color: inherit;
+  text-decoration: none;
+}
+
+.continent__list li {
+  padding: 20px;
+  width: 40%;
+}
+
+.data__description h2,
+.result__sheet h2 {
+  color: rgb(42, 185, 42);
+}
+
+.antarctica {
+  text-align: left !important;
+}
+
+.cont-btn {
+  text-align: right !important;
+}
+
+.hide-content {
+  display: none;
+}
+
+.data__description {
+  color: gray;
+}
+
+.map {
+  background-color: beige;
+  padding: 12px;
+}
+
+.map__container {
+  padding: 0;
+  height: 100%;
+}
+
+div.country__container {
+  background-color: beige;
+}
+
+/* loading animation */
+div#loading,
+div.error {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+div#circle {
+  width: 40px;
+  height: 40px;
+  border: 5px solid red;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  animation: circle 2s infinite forwards;
+}
+
+@keyframes circle {
+  0% {
+    border-color: red;
+    transform: scale(1);
+  }
+  /* 25% {
+    border-color: gold;
+    transform: scale(1.1);
+  } */
+  50% {
+    border-color: lime;
+    transform: scale(1.3);
+  }
+  /* 75% {
+    border-color: dodgerblue;
+    transform: scale(1.1);
+  } */
+  100% {
+    border-color: purple;
+    transform: scale(1);
+  }
+}
+
+div#square {
+  width: 10px;
+  height: 10px;
+  border: 3px solid limegreen;
+  animation: square 2s infinite alternate-reverse;
+}
+
+@keyframes square {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    border-color: aqua;
+    border-width: 2px;
+  }
+  50% {
+    border-color: coral;
+    border-width: 4px;
+  }
+  75% {
+    border-color: yellow;
+    border-width: 6px;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
